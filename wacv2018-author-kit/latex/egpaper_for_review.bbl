@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{Criminisi2000}
+A.~Criminisi, I.~Reid, and A.~Zisserman.
+\newblock Single view metrology.
+\newblock {\em International Journal of Computer Vision}, 40(2):123--148, Nov
+  2000.
+
+\bibitem{DBLP:journals/corr/EigenPF14}
+D.~Eigen, C.~Puhrsch, and R.~Fergus.
+\newblock Depth map prediction from a single image using a multi-scale deep
+  network.
+\newblock {\em CoRR}, abs/1406.2283, 2014.
+
+\bibitem{Lee2009GeometricRF}
+D.~C. Lee, M.~Hebert, and T.~Kanade.
+\newblock Geometric reasoning for single image structure recovery.
+\newblock {\em 2009 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 2136--2143, 2009.
+
+\bibitem{Liu+al:CVPR10}
+B.~Liu, S.~Gould, and D.~Koller.
+\newblock Single image depth estimation from predicted semantic labels.
+\newblock In {\em Proceedings of the Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, 2010.
+
+\bibitem{Liu_2015_CVPR}
+F.~Liu, C.~Shen, and G.~Lin.
+\newblock Deep convolutional neural fields for depth estimation from a single
+  image.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, June 2015.
+
+\bibitem{Liu_2014_CVPR}
+M.~Liu, M.~Salzmann, and X.~He.
+\newblock Discrete-continuous depth estimation from a single image.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, June 2014.
+
+\bibitem{ceig.20141109}
+A.~Lopez, E.~Garces, and D.~Gutierrez.
+\newblock {Depth from a Single Image Through User Interaction}.
+\newblock In A.~Munoz and P.-P. Vazquez, editors, {\em Spanish Computer
+  Graphics Conference (CEIG)}. The Eurographics Association, 2014.
+
+\bibitem{Silberman:ECCV12}
+P.~K. Nathan~Silberman, Derek~Hoiem and R.~Fergus.
+\newblock Indoor segmentation and support inference from rgbd images.
+\newblock In {\em ECCV}, 2012.
+
+\bibitem{NIPS2005_2921}
+A.~Saxena, S.~H. Chung, and A.~Y. Ng.
+\newblock Learning depth from single monocular images.
+\newblock In Y.~Weiss, B.~Sch\"{o}lkopf, and J.~C. Platt, editors, {\em
+  Advances in Neural Information Processing Systems 18}, pages 1161--1168. MIT
+  Press, 2006.
+
+\bibitem{silberman11indoor}
+N.~Silberman and R.~Fergus.
+\newblock Indoor scene segmentation using a structured light sensor.
+\newblock In {\em Proceedings of the International Conference on Computer
+  Vision - Workshop on 3D Representation and Recognition}, 2011.
+
+\bibitem{SUN}
+S.~Song, S.~P.~Lichtenberg, and J.~Xiao.
+\newblock Sun rgb-d: A rgb-d scene understanding benchmark suite.
+\newblock pages 567--576, 06 2015.
+
+\bibitem{Wang_2015_CVPR}
+P.~Wang, X.~Shen, Z.~Lin, S.~Cohen, B.~Price, and A.~L. Yuille.
+\newblock Towards unified depth and semantic prediction from a single image.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, June 2015.
+
+\end{thebibliography}
