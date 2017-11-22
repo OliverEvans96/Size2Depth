@@ -23,7 +23,9 @@ def get_model(rgb, div):
     depths = tf.reshape(tf.stack(depth_list, axis = 1), [div, div])
     return depths
 
+'''
 def get_loss(depth, gt_depth, div):
     l2_loss = tf.reduce_mean(tf.square(depth - gt_depth))
     tf.add_to_collection('loss' + str(div), l2_loss)
-    return tf.add_n(tf.get_collection('loss' + str(div)), name = 'total_loss'+ str(div))
+    return tf.add_n(tf.get_collection('loss' + str(div)), name = 'total_loss' + str(div))
+'''
