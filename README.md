@@ -33,11 +33,18 @@ depth maps.
 ![demo](res/demo.png)
 
 ## Author
-<figure class="third">
-    <img src="res/wyr.jpg">
-    <img src="res/ysh.jpg">
-    <img src="res/zlm.jpg">
-</figure>
+<table style="width:100%" align="center" border="0">
+  <tr style="border-style:hidden">
+     <th style="border-style:hidden"><img src="./res/wyr.jpg" style="border-radius:50%;border-style: solid;border-width: thin;"></th>
+     <th style="border-style:hidden"><img src="./res/ysh.jpg" style="border-radius:50%;border-style: solid;border-width: thin;"></th> 
+     <th style="border-style:hidden"><img src="./res/zlm.jpg" style="border-radius:50%;border-style: solid;border-width: thin;"></th>
+  </tr>
+  <tr style="border-style:hidden">
+     <th style="border-style:hidden"> <a href="https://github.com/Yiranwu">Yiran Wu</a></th>
+     <th style="border-style:hidden"> <a href="https://github.com/yingsihao">Sihao Ying</a></th>
+     <th style="border-style:hidden"> <a href="https://github.com/merrymercy">Lianmin Zheng</a></th>
+  </tr>
+</table>
 
 ## Code & Paper
 View code on [Github](src).  
