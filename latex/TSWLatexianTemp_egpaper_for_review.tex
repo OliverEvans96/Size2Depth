@@ -14,7 +14,7 @@
 % run, let it finish, and you should be clear).
 %\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
 
-\wacvfinalcopy % *** Uncomment this line for the final submission
+%\wacvfinalcopy % *** Uncomment this line for the final submission
 
 \def\wacvPaperID{****} % *** Enter the wacv Paper ID here
 \def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
@@ -59,11 +59,19 @@ Institution2\\
 %%%%%%%%% BODY TEXT
 \section{Introduction}
 
-Please follow the steps outlined below when submitting your manuscript to
-the IEEE Computer Society Press.  This style guide now has several
-important modifications (for example, you are no longer warned against the
-use of sticky tape to attach your artwork to the paper), so all authors
-should read this new version.
+Single image depth estimation is a essential problem in computer vision which has found various applications in tasks like generating depth for a dataset without depth label and estimate depth for unreal images such as cartoon. As an important component of understanding geometric relations within a scene, it also serves as a basis for plenty of advanced CV problems. This task is quite challenging for it's ill-posedness due to the inherent ambiguity of single images. Learning-based methods (applying deep convolutional neural network, most commonly) [] are recently proved to be a effective solution, however, with two major shortcomings. Firstly, to train a deep neural network, lots of training datas are required, which are sometimes hard to get. Secondly, for unseen images that do not have similar features with training data, learning-based methods perform poorly, as deep neural network will also learn particular bias from training data, which shows its lack of generalization. Another kind of popular methods try to exploit human prior through user interaction []. They require users to directly label depth for several significant pixels or label relative relationships of depth for some pairs or groups of pixels. Whereas human concept for depth is extremely rough,
+
+In this paper, we propose a new method which estimates depth also by user interaction, but requires size-related information from user instead of depth-related information. In our method, we firstly divide the image to be processed into small patches, and label approximate size for each patch. Then we... As human are able to describe the size of an object easier than to estimate the depth of an object in an image though daily experience, our method achieves good results and allows users to get rid of 
+
+%-------------------------------------------------------------------------
+\section{Related works}
+
+There are increasing number of methods trying to estimate depth for a single monocular image, which can be roughly classified into two families: learning-based method and user interactive method.
+
+Some traditional learning-based methods formulate depth estimation as a Markov Random Field (MRF) learning problem. Saxena \etal [] using linear regression and a MRF to predict depth from a set of image feature. Realizing the strong correlation between depth estimation and semantic segmentation, Liu \etal [] made use of predicted semantic labels to guide 3D reconstruction and predict depth.
+
+Most of the recent learning-based approaches rely on the application of deep learning, among which deep convolutional neural network (CNN) is used most commonly. Eigen \etal [] designed a global coarse-scale deep CNN to regress a coarse depth map directly from an input image. They then trained a local fine-scale network to make local refinements. Liu \etal [] proposed a deep convolutional neural field model for depth estimation by exploring CNN and continuous conditional random field (CRF). They jointly learned the unary and pairwise potentials of CRF in a unified deep CNN framework. Further works are made to exploit the strong correlation between depth estimation and semantic segmentation. Wang \etal [] used a deep CNN to jointly predict a global layout composed of pixel-wise depth values as well as semantic labels, and improved performance by allowing interactions between depth and semantic information.
+
 
 %-------------------------------------------------------------------------
 \subsection{Language}
@@ -77,8 +85,7 @@ previously published in substantially similar form. Furthermore, no paper
 which contains significant overlap with the contributions of this paper
 either has been or will be submitted during the WACV 2018 review period to
 {\bf either a journal} or any conference (including WACV 2018) or any
-workshop.
- {\bf Papers violating this condition will be rejected.}
+workshop.  {\bf Papers violating this condition will be rejected.}
 
 If there are papers that may appear to the reviewers
 to violate this condition, then it is your responsibility to: (1)~cite
@@ -113,7 +120,7 @@ the \verb'\wacvfinalcopy' command in the document preamble.)  Reviewers:
 note that the ruler measurements do not align well with lines in the paper
 --- this turns out to be very difficult to do well when the paper contains
 many figures and equations, and, when done, looks ugly.  Just use fractional
-references (e.g.\ this line is $095.5$), although in most cases one would
+references (e.g.\ this line is $097.15$), although in most cases one would
 expect that the approximate location will be adequate.
 
 \subsection{Mathematics}
@@ -125,7 +132,7 @@ might not need to refer to it.  It is cumbersome to have to use
 circumlocutions like ``the equation second from the top of page 3 column
 1''.  (Note that the ruler will not be present in the final copy, so is not
 an alternative to equation numbers).  All authors will benefit from reading
-Mermin's description of how to write mathematics.%: \url{http://www.wacv.org/doc/mermin.pdf}.
+Mermin's description of how to write mathematics.
 
 
 \subsection{Blind review}
@@ -304,23 +311,9 @@ page.
 %-------------------------------------------------------------------------
 \subsection{Margins and page numbering}
 
-All printed material, including text, illustrations, and charts, must be kept
-within a print area 6-7/8 inches (17.5 cm) wide by 8-7/8 inches (22.54 cm)
-high.  Page numbers should be in footer with page numbers, centered and .75
-inches from the bottom of the page and make it start at the correct page
-number rather than the 4321 in the example.  To do this fine the line (around
-line 23)
-\begin{verbatim}
-%\ifwacvfinal\pagestyle{empty}\fi
-\setcounter{page}{4321}
-\end{verbatim}
-where the number 4321 is your assigned starting page.
-
-Make sure the first page is numbered by commenting out the first page being
-empty on line 46
-\begin{verbatim}
-%\thispagestyle{empty}
-\end{verbatim}
+All printed material, including text, illustrations, and charts, must be
+kept within a print area 6-7/8 inches (17.5 cm) wide by 8-7/8 inches
+(22.54 cm) high.
 
 
 %-------------------------------------------------------------------------
@@ -358,7 +351,7 @@ second-, and third-order headings.
 
 FIRST-ORDER HEADINGS. (For example, {\large \bf 1. Introduction})
 should be Times 12-point boldface, initially capitalized, flush left,
-with one blank line before.
+with one blank line before, and one blank line after.
 
 SECOND-ORDER HEADINGS. (For example, { \bf 1.1. Database elements})
 should be Times 11-point boldface, initially capitalized, flush left,
@@ -439,10 +432,14 @@ You must include your signed IEEE copyright release form when you submit
 your finished paper. We MUST have this form before your paper can be
 published in the proceedings.
 
+Please direct any questions to the production editor in charge of these
+proceedings at the IEEE Computer Society Press: Phone (714) 821-8380, or
+Fax (714) 761-1784.
 
 {\small
 \bibliographystyle{ieee}
 \bibliography{egbib}
 }
+
 
 \end{document}

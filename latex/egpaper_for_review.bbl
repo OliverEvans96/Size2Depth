@@ -61,11 +61,6 @@ N.~Silberman and R.~Fergus.
 \newblock In {\em Proceedings of the International Conference on Computer
   Vision - Workshop on 3D Representation and Recognition}, 2011.
 
-\bibitem{SUN}
-S.~Song, S.~P.~Lichtenberg, and J.~Xiao.
-\newblock Sun rgb-d: A rgb-d scene understanding benchmark suite.
-\newblock pages 567--576, 06 2015.
-
 \bibitem{Wang_2015_CVPR}
 P.~Wang, X.~Shen, Z.~Lin, S.~Cohen, B.~Price, and A.~L. Yuille.
 \newblock Towards unified depth and semantic prediction from a single image.
