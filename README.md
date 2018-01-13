@@ -47,5 +47,5 @@ depth maps.
 </table>
 
 ## Code & Paper
-View code on [Github](src).  
+View code on [Github](.).  
 View paper on [Here](src).  
