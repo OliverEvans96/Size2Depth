@@ -28,7 +28,7 @@ tional depth-labeling methods and can produce satisfactory
 depth maps.
 
 ## Demo
-![video](src)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jliea54nNFM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ![demo](res/demo.png)
 
@@ -47,5 +47,5 @@ depth maps.
 </table>
 
 ## Code & Paper
-View code on [Github](.).  
-View paper on [Here](src).  
+View code on [Github](https://github.com/Yiranwu/Size2Depth).  
+View paper on [Here](https://).  
