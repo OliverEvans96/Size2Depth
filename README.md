@@ -21,7 +21,7 @@ traditional depth-labeling methods and can produce satisfactory
 depth maps.
 
 ## Demo
-<iframe src="https://www.youtube.com/embed/jliea54nNFM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/jliea54nNFM" allow="autoplay; encrypted-media" allowfullscreen="" width="800" height="450" frameborder="0"></iframe>
 
 ![demo](res/demo.png)
 
