@@ -5,7 +5,6 @@ from skimage.transform import resize
 
 mat = 'nyu_depth_v2_labeled.mat'
 data = h5py.File(mat)
-
 # Function to read rgb and ground truth depth images from dataset
 # idx: index of image
 # resr, resc: resolution of returned image

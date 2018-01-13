@@ -16,12 +16,21 @@ def get_label(rgb):
         io.imshow(rgb_img / 255)
         io.show()
 
-        size = np.zeros([div, div])
+        size = []
         for r in range(div):
-            for c in range(div):
-                print 'input size label for block (%d, %d)'% (r, c)
-                size[r][c] = input()
-        depth_maps.append(size)
+            size.append(input())
+        size = np.array(size)
+
+        stepr = int(round(H/div))
+        stepc = int(round(W/div))
+        dense_size = np.zeros([H, W])
+        for r in range(H):
+            for c in range(W):
+                pr = int(r/stepr)
+                pc = int(c/stepc)
+                dense_size[r][c] = size[pr][pc]
+
+        depth_maps.append(dense_size)
     return depth_maps[0]
 
 
